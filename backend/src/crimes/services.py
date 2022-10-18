@@ -36,7 +36,7 @@ class BiqQueryService:
 			json_row = json.loads(row.detail)
 			json_list.append(json_row['primary_type'])
 
-		return json_list
+		return sorted(json_list)
 
 
 	async def query_chicago_crimes(self, date: str, primary_type: str) -> List[dict]:
