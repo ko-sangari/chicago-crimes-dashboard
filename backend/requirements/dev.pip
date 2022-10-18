@@ -1,0 +1,6 @@
+-r base.pip
+
+pytest==7.1.3
+pytest-asyncio
+pytest-mock==3.10.0
+coverage==6.5.0

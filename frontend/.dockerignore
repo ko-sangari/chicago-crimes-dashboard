@@ -1,0 +1,11 @@
+.env.sample
+.venv/
+.pytest*
+.dockerignore
+.coverage
+
+htmlcov/
+Dockerfile
+
+**/__pycache__
+**/*.pyc

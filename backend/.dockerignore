@@ -1,0 +1,12 @@
+.env.sample
+.venv/
+.pytest*
+.dockerignore
+.coverage
+
+htmlcov/
+Dockerfile
+GoogleCredentials.sample.json
+
+**/__pycache__
+**/*.pyc
