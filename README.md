@@ -1,8 +1,10 @@
 # 🚨 Chicago Crimes Dashboard
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://https://docker.com/) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
-***
 
+![Screenshot from 2022-10-18 17-14-06](https://user-images.githubusercontent.com/38611172/196439960-fa6f2882-0ac3-488f-918e-577e95c1d5b8.png)
+
+***
 ## Contents
 - [The project's purpose](#The-project's-purpose)
 - [What used to make this project](#What-used-to-make-this-project)
@@ -45,9 +47,10 @@ GOOGLE_CREDENTIALS=./GoogleCredentials.json
 ***
 
 ## How to run project
-There is a _docker-compose.dev.yml_, which can help to run the project easily. I'll show you how to use it.
+There is a _docker-compose.dev.yml_ in root folder, which can help to run the project easily. I'll show you how to use it.
 </br>⚠️ Both Backend & Frontend folders has their own _Dockerfile_.
 ```sh
+docker network create CrimeService
 docker-compose -f docker-compose.dev.yml up -d --build
 ```
 And to access the dashboard, just open below link in your browser.
