@@ -15,7 +15,7 @@
 ***
 
 ## The project's purpose
-This project is a visual interface for a BigQuery public dataset of Chicago's crimes. You can filter the dataset based on CrimeType and date, and check the exact location of the crimes on Chicago's map. The whole project is written in Mighty Python.
+This project is a visual interface for a BigQuery public dataset of Chicago's crimes. You can filter the dataset based on Crime type and Date, and check the exact location of the crimes on Chicago's map. The whole project is written in Python.
 So, let's enjoy it! 
 ***
 
@@ -60,9 +60,18 @@ http://localhost:8501/
 ***
 
 ## How to run tests
-Both Backend & Frontend folders has their _tests_ folder, which you can run _pytest_ command to run the tests separately.
+Both Backend & Frontend folders have the tests folder, in which you can run _pytest_ command to run the tests separately.
+<br/>And, what about Test Coverage?
 ```sh
 pytest
+
+coverage run -m pytest
+coverage report
+# Name                            Stmts   Miss  Cover
+# -----------------------------------------------------
+# Backend  Test Coverage TOTAL     185      5    97%
+# Frontend Test Coverage TOTAL      56      0   100%
+
 ```
 ***
 
