@@ -50,7 +50,6 @@ GOOGLE_CREDENTIALS=./GoogleCredentials.json
 There is a _docker-compose.dev.yml_ in root folder, which can help to run the project easily. I'll show you how to use it.
 </br>⚠️ Both Backend & Frontend folders has their own _Dockerfile_.
 ```sh
-docker network create CrimeService
 docker-compose -f docker-compose.dev.yml up -d --build
 ```
 And to access the dashboard, just open below link in your browser.
