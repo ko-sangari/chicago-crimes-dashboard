@@ -41,7 +41,7 @@ If you don't have it, [click here](https://cloud.google.com/bigquery/docs/quicks
 you can put it in _backend_ directory project or anywhere you want, BUT you should add that path in _backend/.env_ variable bellow.
 </br>⚠️ In project, both Backend & Frontend folders has a _.env.sample_ file, which you should rename it to _.env_ and setup your variables.
 ```sh
-GOOGLE_CREDENTIALS=./GoogleCredentials.json
+GOOGLE_APPLICATION_CREDENTIALS=./GoogleCredentials.json
 ```
 3. If you need to check the installed packages, they are in _requirements_ folder under Backend or Frontend folder and splited to *base.pip* & *dev.pip* .
 ***

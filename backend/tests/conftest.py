@@ -33,10 +33,5 @@ async def redis() -> Generator:
 
 
 @pytest.fixture
-def well_bigquery_credential() -> None:
-	os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.environ.get('GOOGLE_CREDENTIALS')
-
-
-@pytest.fixture
 def without_bigquery_credential() -> None:
 	os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = ''

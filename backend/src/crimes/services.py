@@ -6,8 +6,6 @@ from typing import List
 
 from src.main import logger
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.environ.get('GOOGLE_CREDENTIALS')
-
 
 class BiqQueryService:
 	"""

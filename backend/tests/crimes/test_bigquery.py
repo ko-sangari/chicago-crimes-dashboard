@@ -6,19 +6,14 @@ from google.cloud import bigquery
 from google.auth.exceptions import DefaultCredentialsError
 
 
-def test_bigquery_credentials(well_bigquery_credential) -> None:
+def test_bigquery_credentials() -> None:
     try:
         bigquery.Client()
     except Exception as exception:
         pytest.fail(str(exception))
 
 
-def test_fail_bigquery_credentials(without_bigquery_credential) -> None:
-    with pytest.raises(DefaultCredentialsError):
-        bigquery.Client()
-
-
-def test_bigquery_has_column_location(well_bigquery_credential) -> None:
+def test_bigquery_has_column_location() -> None:
     _date = '2022-10-01'
     _primary_type = 'THEFT'
     QUERY = (
@@ -36,3 +31,8 @@ def test_bigquery_has_column_location(well_bigquery_credential) -> None:
     json_first_row = json.loads(first_row.detail)
     
     assert ('location' in json_first_row) == True
+
+
+def test_fail_bigquery_credentials(without_bigquery_credential) -> None:
+    with pytest.raises(DefaultCredentialsError):
+        bigquery.Client()
